@@ -60,7 +60,7 @@ Hal ini memungkinkan petugas atau pengguna untuk terhubung langsung ke sistem da
 |                 | VCC           | 3.3V          | 3.3V        |
 |                 | GND           | GND           | GND         |
 
-> ![Gambar Skema Rangkaian](https://github.com/melkianuskilunressy/MELKIANUS-KILUNRESSY-ALDI-P-TAMBUNAL-PROJECT-AKHIR-STIKOM-AMBON/blob/1bb49743a4abaa350f433b64ff4dc6c849401f93/WhatsApp%20Image%202025-07-02%20at%2017.27.18_a0fafbe1.jpg)  
+> ![Gambar Skema Rangkaian](https://github.com/melkianuskilunressy/MELKIANUS-KILUNRESSY-ALDI-P-TAMBUNAL-PROJECT-AKHIR-STIKOM-AMBON/raw/main/rangkaian_bb.png)  
 > *(Ganti link di atas dengan gambar wiring Anda)*
 
 ---
