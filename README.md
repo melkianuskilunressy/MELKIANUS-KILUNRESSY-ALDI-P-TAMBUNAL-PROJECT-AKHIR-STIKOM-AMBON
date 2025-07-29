@@ -1,6 +1,6 @@
 # 🚗 Sistem Parkir Otomatis dengan RFID & ESP8266
 
-Sebuah proyek sistem parkir otomatis berbasis **ESP8266** yang menggunakan **RFID** untuk otentikasi, **sensor inframerah** untuk deteksi ketersediaan slot, dan dilengkapi dengan **antarmuka web** untuk pemantauan real-time.
+Sebuah proyek sistem parkir otomatis berbasis **ESP8266** yang menggunakan **E-KTP dan Kartu RFID** untuk autentikasi, **sensor inframerah** untuk deteksi ketersediaan slot, dan dilengkapi dengan **antarmuka web** untuk pemantauan real-time.
 
 > ![Gambar Demo Sistem Parkir](#)  
 > *(Disarankan untuk mengganti link di atas dengan GIF demo proyek Anda)*
@@ -10,7 +10,7 @@ Sebuah proyek sistem parkir otomatis berbasis **ESP8266** yang menggunakan **RFI
 ## 📜 Deskripsi Proyek
 
 Proyek ini dirancang sebagai solusi parkir cerdas yang efisien dan otomatis.  
-Pengguna dengan kartu RFID yang telah terdaftar dapat masuk ke area parkir jika masih ada slot yang tersedia.  
+Pengguna dengan E-KTP atau kartu RFID yang telah terdaftar dapat masuk ke area parkir jika masih ada slot yang tersedia.  
 Palang pintu akan terbuka secara otomatis setelah otentikasi berhasil.
 
 Keunggulan utama dari sistem ini adalah kemampuannya untuk membuat Access Point (AP) Wi-Fi sendiri.  
@@ -20,7 +20,7 @@ Hal ini memungkinkan petugas atau pengguna untuk terhubung langsung ke sistem da
 
 ## ✨ Fitur Utama
 
-- ✅ **Otentikasi RFID**: Akses masuk hanya untuk kartu RFID yang telah terdaftar.
+- ✅ **Autentikasi RFID**: Akses masuk hanya untuk E-KTP atau kartu RFID yang telah terdaftar.
 - 🚘 **Deteksi Slot Parkir**: Menggunakan 3 sensor inframerah (IR) untuk deteksi kendaraan.
 - ⚙️ **Kontrol Palang Otomatis**: Motor servo membuka/menutup palang secara otomatis.
 - 🌐 **Monitoring Real-Time via Web**: Akses Wi-Fi lokal via ESP8266 (IP: `192.168.4.1`).
@@ -33,10 +33,12 @@ Hal ini memungkinkan petugas atau pengguna untuk terhubung langsung ke sistem da
 | Komponen             | Jumlah | Keterangan                            |
 |----------------------|--------|----------------------------------------|
 | ESP8266 (NodeMCU)    | 1      | Mikrokontroler utama                  |
-| MFRC522 RFID Reader  | 1      | Untuk membaca kartu/tag RFID          |
-| Kartu/Tag RFID       | 5+     | Frekuensi 13.56 MHz                   |
-| Motor Servo          | 1      | SG90/MG90S untuk palang pintu         |
+| MFRC522 RFID Reader  | 1      | Untuk membaca E-KTP dan kartu RFID    |
+| E-KTP/Kartu RFID     | 3      | Frekuensi 13.56 MHz                   |
+| Motor Servo          | 1      | SN 1030 PRO untuk palang pintu         |
 | Sensor Inframerah IR | 3      | Untuk mendeteksi kendaraan            |
+| Modul Step Down      | 1      | Untuk menurunkan tegangan dari adaptor|
+| Kapasitor 1000µF 16V | 1      | Untuk menstabilkan tegangan|
 | Kabel Jumper         | Secukupnya | Penghubung antar komponen          |
 | Power Supply 5V      | 1      | Daya untuk sistem                     |
 
